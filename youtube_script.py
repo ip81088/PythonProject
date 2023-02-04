@@ -13,7 +13,7 @@ driver.get('https://www.youtube.com/')
 search_bar = driver.find_element(By.XPATH,
                                  '/html/body/ytd-app/div[1]/div/ytd-masthead/div[3]/div[2]/ytd-searchbox/form/div['
                                  '1]/div[1]/input')
-search_bar.send_keys('Hi my name is')
+search_bar.send_keys('The Real Slim Shady')
 
 # Find the search button and click it
 search_button = driver.find_element(By.XPATH,
@@ -34,4 +34,4 @@ video = wait.until(EC.presence_of_element_located((By.XPATH,
 video.click()
 
 
-input()
+
